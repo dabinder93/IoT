@@ -1,8 +1,6 @@
-# Lab 2 #
-=============
+# Lab 2
 
-
-**Code**
+**Code
 
 Changed ledPin in to LED_BUILTIN
 
@@ -59,4 +57,4 @@ void loop() {
     digitalWrite(LED_BUILTIN, LOW);
   }
 }
-```
+
