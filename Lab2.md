@@ -6,8 +6,8 @@ __Source__
 
 __Code__
 
-Changed ledPin in to LED_BUILTIN
-Change buttonPin to 14 
+* Changed ledPin in to LED_BUILTIN
+* Change buttonPin to 14 
 
 ```
 /*
