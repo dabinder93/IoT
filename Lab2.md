@@ -6,8 +6,8 @@ __Source__
 
 __Code__
 
-* Changed ledPin in to LED_BUILTIN
-* Change buttonPin to 14 
+* Changed ledPin into LED_BUILTIN
+* Change buttonPin to 14 (if it was connected to D5 on the Arduino)
 
 ```
 /*
@@ -66,20 +66,25 @@ void loop() {
 Next step is to combine this with the WLAN Example and Post a request to IFTTT
 
 # Setup IFTTT
-- Login to IFTT
-** New Applet
-- Choose Webhooks as Service
-- Choose Trigger (Receive a web request)
-- choose Event Name (button_clicked)
-- choose action service (Twitter)
-- login to twitter -> Select what it should post
+* Login to IFTT
 
-## Button press Request
+__New Applet__
+* Choose Webhooks as Service
+* Choose Trigger (Receive a web request)
+* choose Event Name (button_clicked)
+* choose action service (Twitter)
+* login to twitter -> Select what it should post
+
+__Button Trigger Hypernlink__
+https://maker.ifttt.com/trigger/button_clicked/with/key/ENSbuR1k4hEdMpOHpOe9btm9ZJYik25GBKSDDQW2QV
+
+## Button press + Request
 Request to IFTTT -> Notification to Smartphone that Button has been pressed 
 
 
 # Probleme
 * No Request sent when Button Pressed, though the Code from the Last Task was inserted into the current Exercise.
+* 
 
 # Probleme mit Arduino
 * Arduino Netzteil Deffekt -> Neues Erhalten
@@ -87,7 +92,7 @@ Request to IFTTT -> Notification to Smartphone that Button has been pressed
 * Arduino tot -> neuer Arduino <3
 * Dennoch Probleme beim Bespielen von Arduino (ca jeder 4 Versuch geht / nicht mehr)
 
-Problemlösung:
+Solution:
 * Connect GND and D3  -> Flash a programm on it -> afterwards it can be used normally again
 
 ** Code
